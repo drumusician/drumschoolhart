@@ -6,45 +6,21 @@ Drumschoolhart
 This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
 provided by the [RailsApps Project](http://railsapps.github.io/).
 
-Rails Composer is supported by developers who purchase our RailsApps tutorials.
+Please support Daniel if you can!
 
-Problems? Issues?
------------
+----
 
-Need help? Ask on Stack Overflow with the tag 'railsapps.'
+This app / website is built for a drum school in Haarlem(where I also teach) and is currently mainly static with some backend stuff to store Student information and to be able for guests to sign up for drum lessons.
 
-Your application contains diagnostics in the README file. Please provide a copy of the README file when reporting any issues.
+If you teach and are interested in a similar minimalistic site like this, get in touch!
 
-If the application doesn't work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
-and include the diagnostics.
-
-Ruby on Rails
 -------------
 
-This application requires:
+App details:
 
 - Ruby 2.3.0
 - Rails 4.2.6
-
-Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
-
-Getting Started
----------------
-
-Documentation and Support
--------------------------
-
-Issues
--------------
-
-Similar Projects
-----------------
-
-Contributing
-------------
-
-Credits
--------
-
-License
--------
+- Postgres
+- Rspec + Capybara
+- Pundit for User authorization
+- Devise for User authentication
