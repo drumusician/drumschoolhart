@@ -29,11 +29,10 @@ class StudentsController < ApplicationController
 
     respond_to do |format|
       if @student.save
-        format.html { redirect_to @student, notice: 'We hebben je aanmelding voor een proefles ontvangen!' }
+        format.html { redirect_to root_path, notice: 'We hebben je aanmelding voor een proefles ontvangen!' }
         format.json { render :show, status: :created, location: @student }
         NewStudentMailer.new_student_mail(@student).deliver_now
         NewStudentMailer.new_student_teacher_mail(@student).deliver_now
-        redirect_to root_path
       else
         format.html { render :new }
         format.json { render json: @student.errors, status: :unprocessable_entity }

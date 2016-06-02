@@ -5,9 +5,9 @@
     .form-group
       %hr
       = f.input :naam, label: 'Naam Leerling', required: true, placeholder: 'naam'
-      = f.input :geboortedatum, label: 'Geboortedatum', as: :date, start_year: Date.today.year - 90, end_year: Date.today.year - 2
+      = f.input :geboortedatum, label: 'Geboortedatum', as: :date, start_year: Date.today.year - 90, end_year: Date.today.year - 2, selected: 2008
       = f.input :caretaker_1_name, label: 'Ouder / Verzorger', required: true
-      = f.input :mobiel, label: 'Mobiel'
+      = f.input :caretaker_1_mobiel, label: 'Mobiel'
       = f.input :caretaker_1_email, label: 'Email', required: true
       = f.input :opmerkingen
   .form-actions

@@ -4,31 +4,20 @@
   %table.table
     %thead
       %tr
-        %th Naam
-        %th Achternaam
-        %th Adres
-        %th Postcode
-        %th Plaats
-        %th Telefoon
+        %th Leerling
+        %th Geboortedatum
+        %th Ouder
         %th Mobiel
         %th Email
-        %th Geboortedatum
-        %th
-        %th
-        %th
 
     %tbody
       - @students.each do |student|
         %tr
           %td= student.naam
-          %td= student.achternaam
-          %td= student.adres
-          %td= student.postcode
-          %td= student.plaats
-          %td= student.telefoon
-          %td= student.mobiel
-          %td= student.email
           %td= student.geboortedatum
+          %td= student.caretaker_1_name
+          %td= student.caretaker_1_mobiel
+          %td= student.caretaker_1_email
           %td= link_to 'Show', student
           - if current_user.admin?
             %td= link_to 'Edit', edit_student_path(student)
