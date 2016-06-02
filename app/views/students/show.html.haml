@@ -1,34 +1,28 @@
 .container
-  %p#notice= notice
+.row
+  .col-md-2
+  .col-md-7
+    %p#notice= notice
+    %p
+      %b Naam:
+      = @student.naam
+    %p
+      %b Geboortedatum:
+      = @student.geboortedatum
+    %p
+      %b Ouder:
+      = @student.caretaker_1_name
+    %p
+      %b Mobiel:
+      = @student.caretaker_1_mobiel
+    %p
+      %b Email:
+      = @student.caretaker_1_email
+    %p
+      %b Opmerkingen:
+      = @student.opmerkingen
 
-  %p
-    %b Naam:
-    = @student.naam
-  %p
-    %b Achternaam:
-    = @student.achternaam
-  %p
-    %b Adres:
-    = @student.adres
-  %p
-    %b Postcode:
-    = @student.postcode
-  %p
-    %b Plaats:
-    = @student.plaats
-  %p
-    %b Telefoon:
-    = @student.telefoon
-  %p
-    %b Mobiel:
-    = @student.mobiel
-  %p
-    %b Email:
-    = @student.email
-  %p
-    %b Geboortedatum:
-    = @student.geboortedatum
-
-  = link_to 'Edit', edit_student_path(@student)
-  \|
-  = link_to 'Back', students_path
+    = link_to 'Edit', edit_student_path(@student)
+    \|
+    = link_to 'Back', students_path
+  .col-md-3
