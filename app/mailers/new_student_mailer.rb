@@ -11,7 +11,7 @@ class NewStudentMailer < ApplicationMailer
     mail(to: ['info@drumschoolhart.nl',
               'info@drumusician.com',
               'ansrietbergen@hotmail.com',
-              'bazmattie@gamil.com'
+              'bazmattie@gmail.com'
               ],
               subject: "Aanmelding Proefles #{@student.naam}"
               )
