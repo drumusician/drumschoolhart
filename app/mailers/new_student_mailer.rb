@@ -8,6 +8,12 @@ class NewStudentMailer < ApplicationMailer
 
   def new_student_teacher_mail(student)
     @student = student
-    mail(to: ['info@drumschoolhart.nl', 'info@drumusician.com'], subject: "Aanmelding Proefles #{@student.naam}")
+    mail(to: ['info@drumschoolhart.nl',
+              'info@drumusician.com',
+              'ansrietbergen@hotmail.com',
+              'bazmattie@gamil.com'
+              ],
+              subject: "Aanmelding Proefles #{@student.naam}"
+              )
   end
 end
