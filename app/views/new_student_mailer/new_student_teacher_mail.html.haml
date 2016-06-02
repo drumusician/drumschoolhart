@@ -1,0 +1,20 @@
+%hmtl
+  %body
+    %p Beste Ans, Baz en Tjaco,
+
+    %p Er is een nieuwe aanmelding voor een proefles voor: #{@student.naam}. Hieronder de gegevens die wij hebben ontvangen.
+
+    %ul
+      %li #{@student.naam}
+      %li #{@student.geboortedatum}
+      %li #{@student.caretaker_1_name}
+      %li #{@student.caretaker_1_mobiel}
+      %li #{@student.caretaker_1_email}
+    %p #{@student.opmerkingen}
+
+    %p Met vriendelijke groet,
+
+    %p de Drumschoolhart website ;)
+    %p
+      %strong Drumschool Hart
+    = yield

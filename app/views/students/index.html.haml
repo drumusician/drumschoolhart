@@ -1,0 +1,39 @@
+.container
+  %h1 Inschrijvingen
+
+  %table.table
+    %thead
+      %tr
+        %th Naam
+        %th Achternaam
+        %th Adres
+        %th Postcode
+        %th Plaats
+        %th Telefoon
+        %th Mobiel
+        %th Email
+        %th Geboortedatum
+        %th
+        %th
+        %th
+
+    %tbody
+      - @students.each do |student|
+        %tr
+          %td= student.naam
+          %td= student.achternaam
+          %td= student.adres
+          %td= student.postcode
+          %td= student.plaats
+          %td= student.telefoon
+          %td= student.mobiel
+          %td= student.email
+          %td= student.geboortedatum
+          %td= link_to 'Show', student
+          - if current_user.admin?
+            %td= link_to 'Edit', edit_student_path(student)
+            %td= link_to 'Destroy', student, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+  %br
+
+  = link_to 'Inschrijving Toevoegen', new_student_path

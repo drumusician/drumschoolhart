@@ -1,0 +1,20 @@
+%hmtl
+  %body
+    %p Beste #{@student.caretaker_1_name},
+
+    %p Bedankt voor je aanmelding voor een proefles voor: #{@student.naam}. Hieronder de gegevens die wij hebben ontvangen. Mocht er iets niet kloppen dan kun je ons altijd even een mailtje sturen.
+
+    %ul
+      %li #{@student.naam}
+      %li #{@student.geboortedatum}
+      %li #{@student.caretaker_1_name}
+      %li #{@student.caretaker_1_mobiel}
+      %li #{@student.caretaker_1_email}
+    %p #{@student.opmerkingen}
+
+    %p Met vriendelijke groet,
+
+    %p Ans, Tjaco en Baz
+    %p
+      %strong Drumschool Hart
+    = yield

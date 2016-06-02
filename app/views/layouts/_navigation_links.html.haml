@@ -1,0 +1,6 @@
+%li
+  = link_to 'Onze Docenten', '#docenten'
+%li
+  = link_to 'Inschrijven', new_student_path
+%li
+  = link_to 'Inschrijvingen', students_path if current_user && (current_user.teacher? || current_user.admin? )

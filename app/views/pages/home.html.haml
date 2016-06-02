@@ -1,0 +1,63 @@
+/ Image Background Page Header
+/ Note: The background image is set within the business-casual.css file.
+%header.business-header
+  .container
+    .row
+      .col-lg-12
+        %h1.tagline Drumschool Hart
+/ Page Content
+.container
+  %hr/
+  .row
+    .col-sm-8
+      %h2 Drumschool Hart Haarlem
+      %p Heb jij altijd al willen drummen in een band!
+      %p Bij Drumschool Hart streven wij ernaar om je zo snel mogelijk een goede basis in het drummen bij te brengen zodat jij lekker met anderen muziek kan maken!
+
+      %h3 Bij Drumschool Hart leer je o.a.:
+      %ul
+        %li spelen in een band
+        %li drumbeats in alle stijlen van funk tot rock en van jazz tot pop
+        %li melodisch slagwerk zoals marimba, vibrafoon
+        %li goede basis van waaruit je kan groeien in alle muziekrichtingen en stijlen
+      %hr/
+    .col-sm-4
+      %h2 Drumschool Hart
+      %address
+        %strong Kleine Houtweg 18 | Gasthuisvest 47
+        = succeed "Haarlem" do
+          %br/
+        %br/
+      %address
+        %abbr{:title => "Email"} E:
+        %a{:href => "mailto:#"} info@drumschoolhart.nl
+        %br
+        %br
+        = button_to 'Meld je hier aan voor een proefles!', new_student_path, {class: 'btn btn-primary', method: 'get'}
+  .row
+    .col-sm-6
+      %blockquote
+        Drumschool Hart | Hart voor Slagwerk!
+    .col-sm-6
+
+  %hr
+  .row
+    %h2#docenten Onze Docenten
+    %br
+    .col-sm-4
+      %img.img-circle.img-responsive.img-center{:alt => "", :src => "http://2.bp.blogspot.com/-wxN-aBmmqag/UTtZKNTbtiI/AAAAAAAAJ6M/iusxJm4DRQw/s1600/Ans+Rietbergen.JPG"}/
+      %h2.title Ans Rietbergen
+      %p
+    .col-sm-4
+      %img.img-circle.img-responsive.img-center{:alt => "", :src => "https://c1.staticflickr.com/9/8391/8473986365_bd6cc186d3_b.jpg"}/
+      %h2.title Baz Mattie
+      %p
+    .col-sm-4
+      %img.img-circle.img-responsive.img-center{:alt => "", :src => "http://www.nmbb.nl/images/Bio's/Tjaco_AmfJazz2-verkleind_bewerkt-4.jpg"}/
+      %h2.title Tjaco Oostdijk
+      %p
+  %hr/
+  %footer
+    .row
+      .col-lg-12
+        %p Copyright © DrumschoolHart 2016

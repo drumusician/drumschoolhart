@@ -1,0 +1,7 @@
+- if user_signed_in?
+  %p.navbar-text.navbar-right
+    Logged in as:
+    = link_to "#{current_user.name.capitalize}", edit_user_registration_path
+    = link_to 'Sign out', destroy_user_session_path, :method=>'delete'
+- else
+  = link_to 'Sign in', new_user_session_path
