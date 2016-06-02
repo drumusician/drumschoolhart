@@ -22,6 +22,7 @@ gem 'pg'
 gem 'puma'
 gem 'pundit'
 gem 'simple_form'
+gem 'newrelic_rpm'
 group :development do
   gem 'better_errors'
   gem 'foreman'
